@@ -1,24 +1,21 @@
 ### Introduction
-
-
-```
-$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-```
+il cervello ha la funzione di elaborare stimoli provenienti dall ambiente esterno ed internamente dal corpo è contenuto nella cavità cranica è formato da due emisferi diviso in lobi ogni lobo e coninvolto in specifiche funzioni e in stretta connessione con il cervelletto e con il midollo spinale e formato da sostanza bianca e grigia macroscopicamente e sono visibili delle circonvoluzioni
+si pre
 
 If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
 
 ### Obtain json object from DICOM image
-Punto di partenza per la costruzione del cervello in plasm è l'ottenimento delle informazioni necessarie 
-alle costruzione delle curve  da utilizzare nella funziona NUBS di plasm.
-The [original brain DICOM image](http://web3d.dia.uniroma3.it/?dicom=example3.dcm&frames=250) sono la base per ricavare le curve che saranno salvate in un oggetto json.
-Per costruire l'oggetto json sono stati utilizzati i tool di disegno e salvataggio presenti in [original brain DICOM image](http://web3d.dia.uniroma3.it/?dicom=example3.dcm&frames=250).
-In particolare, è stato usato il tool freePol per il tracciamento dei contorni delle immagini interessate
-L'oggetto ottenuto, è stato salvato localmente nel file [JSON brain](https://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.jsonhttps://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.json)
+Starting point for the construction of the brain in plasm is obtaining the necessary information to the construction of the curves to be used in nubs function of plasm.
+The [original brain DICOM image](http://web3d.dia.uniroma3.it/?dicom=example3.dcm&frames=250) are the basis for deriving the curves will be saved in a json object.
+To construct the json object were used drawing tools and rescue present in [original brain DICOM image](http://web3d.dia.uniroma3.it/?dicom=example3.dcm&frames=250).
+In particular, the tool freePol has been used  for tracing of the contours of the images concerned
+The resulting object is saved locally in the file [JSON brain](https://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.jsonhttps://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.json)
 
 ### from json to point
-l'oggetto json ottenuto, deve essere ulteriormente elaborato per estrarre informazioni utili elaborabile da plasm.
+l'oggetto json ottenuto, deve essere ulteriormente elaborato per estrarre informazioni  utili per plasm.
+Fruttando le librerie jquery e in particolare la funzione getJSON() si estraggono le curve di interesse che verrano scalate di un fattore di 100.
+l'array ottenuto è composto da un insieme di array ognuno contente le coordinate delle linee tracciate con il tool freePol.
+Prima del rendering, per diminuire il numero di punti da elaborare, scegliamo di disegnare le curve con un numero di punti maggiore di dieci e di prendere un punto ogni tre
 
 ### Authors and Contributors
 You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
