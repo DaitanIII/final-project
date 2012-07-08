@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Final-project by DaitanII</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="javascripts/scale.fix.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header">Final-project</h1>
+        <p class="header"></p>
+
+        <ul>
+          <li class="download"><a class="buttons" href="https://github.com/DaitanII/final-project/zipball/master">Download ZIP</a></li>
+          <li class="download"><a class="buttons" href="https://github.com/DaitanII/final-project/tarball/master">Download TAR</a></li>
+          <li><a class="buttons github" href="https://github.com/DaitanII/final-project">View On GitHub</a></li>
+        </ul>
+
+        <p class="header">This project is maintained by <a class="header name" href="https://github.com/DaitanII">DaitanII</a></p>
+
+
+      </header>
+      <section>
+        <h3>Introduction</h3>
+
+<p>il cervello ha la funzione di elaborare stimoli provenienti dall ambiente esterno ed internamente dal corpo è contenuto nella cavità cranica è formato da due emisferi diviso in lobi ogni lobo e coninvolto in specifiche funzioni e in stretta connessione con il cervelletto e con il midollo spinale e formato da sostanza bianca e grigia macroscopicamente e sono visibili delle circonvoluzioni
+la superfice esterna degli emisferi cerebrali dell'uomo e caratterizzata dalla presenza di numerosi solchi e di rilievi che la rendono notevolmente accidentata e che ne amplificano la sua estensione sono presenti anche delle scissure che lo dividono il lobi</p>
+
+<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+
+<h3>Obtain json object from DICOM image</h3>
+
+<p>Starting point for the construction of the brain in plasm is obtaining the necessary information to the construction of the curves to be used in nubs function of plasm.
+The <a href="http://web3d.dia.uniroma3.it/?dicom=example3.dcm&amp;frames=250">original brain DICOM image</a> are the basis for deriving the curves will be saved in a json object.
+To construct the json object were used drawing tools and rescue present in <a href="http://web3d.dia.uniroma3.it/?dicom=example3.dcm&amp;frames=250">original brain DICOM image</a>.
+In particular, the tool freePol has been used  for tracing of the contours of the images concerned
+The resulting object is saved locally in the file <a href="https://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.jsonhttps://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.json">JSON brain</a></p>
+
+<h3>from json to point</h3>
+
+<p>l'oggetto json ottenuto, deve essere ulteriormente elaborato per estrarre informazioni  utili per plasm.
+Fruttando le librerie jquery e in particolare la funzione getJSON() si estraggono le curve di interesse che verrano scalate di un fattore di 100.
+l'array ottenuto è composto da un insieme di array ognuno contente le coordinate delle linee tracciate con il tool freePol.
+Prima del rendering, per diminuire il numero di punti da elaborare, scegliamo di disegnare le curve con un numero di punti maggiore di dieci e di prendere un punto ogni tre</p>
+
+<h3>Authors and Contributors</h3>
+
+<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+
+<h3>Support or Contact</h3>
+
+<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+      </section>
+      <footer>
+        <p><small>Hosted on <a href="https://pages.github.com">GitHub Pages</a> using the Dinky theme</small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+		
+  </body>
+</html>
