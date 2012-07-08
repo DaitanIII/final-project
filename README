@@ -1,0 +1,27 @@
+### Introduction
+
+
+```
+$ cd your_repo_root/repo_name
+$ git fetch origin
+$ git checkout gh-pages
+```
+
+If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.
+
+### Obtain json object from DICOM image
+Punto di partenza per la costruzione del cervello in plasm è l'ottenimento delle informazioni necessarie 
+alle costruzione delle curve  da utilizzare nella funziona NUBS di plasm.
+The [original brain DICOM image](http://web3d.dia.uniroma3.it/?dicom=example3.dcm&frames=250) sono la base per ricavare le curve che saranno salvate in un oggetto json.
+Per costruire l'oggetto json sono stati utilizzati i tool di disegno e salvataggio presenti in [original brain DICOM image](http://web3d.dia.uniroma3.it/?dicom=example3.dcm&frames=250).
+In particolare, è stato usato il tool freePol per il tracciamento dei contorni delle immagini interessate
+L'oggetto ottenuto, è stato salvato localmente nel file [JSON brain](https://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.jsonhttps://github.com/cvdlab-cg/228091/blob/master/final-project/oggettiJson/DICOM/json_brain.json)
+
+### from json to point
+l'oggetto json ottenuto, deve essere ulteriormente elaborato per estrarre informazioni utili elaborabile da plasm.
+
+### Authors and Contributors
+You can @mention a GitHub username to generate a link to their profile. The resulting `<a>` element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (@defunkt), PJ Hyett (@pjhyett), and Tom Preston-Werner (@mojombo) founded GitHub.
+
+### Support or Contact
+Having trouble with Pages? Check out the documentation at http://help.github.com/pages or contact support@github.com and we’ll help you sort it out.
